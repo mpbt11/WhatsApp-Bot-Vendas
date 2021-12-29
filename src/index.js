@@ -1,6 +1,6 @@
 const bot = require("venom-bot");
 const { db } = require("../src/models/banco");
-const { step } = require("../src/models/stages");
+const { step } = require("./models/etapas");
 
 bot.create().then((client) => start(client));
 
