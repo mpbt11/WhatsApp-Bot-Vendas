@@ -26,9 +26,7 @@ const inicio = (user, msg, contato) => {
     menu,
     `${time} ${contato}! Olá! Meu nome é Paula, sua assistente virtual da loja. Vou lhe mostrar o nosso cardápio 📝
     \nPor favor, envie o código do produto para eu anotar aqui...\n
-    \n🗣 Aaaa.. Para adicionar mais itens, é só *inserir um código por vez!*
-    \n• Depois de adicionar os produtos, *digite #.*
-    \n• Para *cancelar* o pedido, digite *.`,
+    \n🗣 Aaaa.. Para adicionar mais itens, é só *inserir um código por vez!*`,
   ];
 }
 

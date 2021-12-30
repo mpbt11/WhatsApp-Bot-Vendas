@@ -19,7 +19,7 @@ const venda = (user, msg) => {
     });
 
     resumo += "\n👉";
-    resumo += ` *Total R$ ${total}*`;
+    resumo += ` *Total R$ ${(total.toFixed(2))}*`;
 
     return ["Por favor, digite o endereço de entrega.\nPara *cancelar* digite *. ", resumo];
   }
@@ -33,6 +33,7 @@ const venda = (user, msg) => {
   db[user].itens.push(cardapio[msg]);
 
   return [
+    "Digite # para finalizar ou * para cancelar.",
     `**${cardapio[msg].descricao}** adicionado com sucesso!`,
   ];
 }
