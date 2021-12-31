@@ -1,9 +1,10 @@
 const { db } = require("../models/banco");
 
 const pagamento = (user, msg) => {
+
   if (msg === "@") {
     db[user].stage = 2;
-    return ["Digite novamente o endereço de entrega\nPara *cancelar* digite *. "];
+    return ["Digite novamente o endereço de entrega.\n• Para *cancelar* digite *. "];
   }
 
   if (msg === "*") {

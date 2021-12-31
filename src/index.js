@@ -4,28 +4,27 @@ const { step } = require("./models/etapas");
 
 bot.create().then((client) => start(client));
 
-function start(client) {
+const start = (client) => {
   client.onMessage((message) => {
-    let resp = step[getStage(message.from)].imp.execute(
+    let resp = step[getStage(message.from)].app.execute(
       message.from,
       message.body,
       message.sender.name
     );
+
     for (let index = 0; index < resp.length; index++) {
       const element = resp[index];
       client.sendText(message.from, element);
     }
   });
-}
+};
 
-function getStage(user) {
-  if (db[user]) {
-    return db[user].stage;
-  } else {
-    db[user] = {
-      stage: 0,
-      itens: [],
-    };
-    return db[user].stage;
-  }
-}
+const getStage = (user) => {
+  db[user]
+    ? db[user].stage
+    : (db[user] = {
+        stage: 0,
+        itens: [],
+      });
+  return db[user].stage;
+};

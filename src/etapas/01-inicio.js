@@ -1,9 +1,11 @@
 const { cardapio } = require("../cardapio/cardapio");
 const { db } = require("../models/banco");
 
-const inicio = (user, msg, contato) => {
-  stamp = new Date();
-  hours = stamp.getHours();
+const inicio = (user, msg) => {
+  now = new Date();
+  hours = now.getHours();
+
+  resetItems(user);
 
   if (hours >= 18 && hours < 24) {
     time = "Boa noite";
@@ -24,10 +26,13 @@ const inicio = (user, msg, contato) => {
 
   return [
     menu,
-    `${time} ${contato}! Olá! Meu nome é Paula, sua assistente virtual da loja. Vou lhe mostrar o nosso cardápio 📝
+    `${time}! Meu nome é Paula, sua assistente virtual da loja. Vou lhe mostrar o nosso cardápio 📝
     \nPor favor, envie o código do produto para eu anotar aqui...\n
     \n🗣 Aaaa.. Para adicionar mais itens, é só *inserir um código por vez!*`,
   ];
-}
+};
+const resetItems = (user) => {
+  return (db[user].itens = []);
+};
 
 exports.execute = inicio;

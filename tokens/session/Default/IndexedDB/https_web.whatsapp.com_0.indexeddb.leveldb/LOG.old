@@ -1,12 +1,14 @@
-2021/12/29-21:32:48.150 61c Reusing MANIFEST C:\MeusProjetos\Meuwhatsapp-bot\tokens\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/12/29-21:32:48.151 61c Recovering log #187
-2021/12/29-21:32:48.209 61c Reusing old log C:\MeusProjetos\Meuwhatsapp-bot\tokens\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000187.log 
-2021/12/29-21:34:08.973 15e0 Level-0 table #192: started
-2021/12/29-21:34:09.040 15e0 Level-0 table #192: 1295133 bytes OK
-2021/12/29-21:34:09.042 15e0 Delete type=0 #187
-2021/12/29-21:34:18.735 2fc0 Compacting 1@1 + 1@2 files
-2021/12/29-21:34:18.840 2fc0 Generated table #193@1: 28433 keys, 1708295 bytes
-2021/12/29-21:34:18.840 2fc0 Compacted 1@1 + 1@2 files => 1708295 bytes
-2021/12/29-21:34:18.842 2fc0 compacted to: files[ 0 0 1 0 0 0 0 ]
-2021/12/29-21:34:18.842 2fc0 Delete type=2 #189
-2021/12/29-21:34:18.842 2fc0 Delete type=2 #192
+2021/12/30-20:39:07.824 1e90 Reusing MANIFEST C:\MeusProjetos\Meuwhatsapp-bot\tokens\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/30-20:39:07.825 1e90 Recovering log #233
+2021/12/30-20:39:07.853 1e90 Reusing old log C:\MeusProjetos\Meuwhatsapp-bot\tokens\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000233.log 
+2021/12/30-20:45:22.448 2fec Level-0 table #239: started
+2021/12/30-20:45:22.478 2fec Level-0 table #239: 1257657 bytes OK
+2021/12/30-20:45:22.481 2fec Delete type=0 #233
+2021/12/30-20:45:25.613 1184 Compacting 1@1 + 2@2 files
+2021/12/30-20:45:25.683 1184 Generated table #240@1: 37552 keys, 2235029 bytes
+2021/12/30-20:45:25.736 1184 Generated table #241@1: 44271 keys, 1952593 bytes
+2021/12/30-20:45:25.736 1184 Compacted 1@1 + 2@2 files => 4187622 bytes
+2021/12/30-20:45:25.737 1184 compacted to: files[ 0 0 2 0 0 0 0 ]
+2021/12/30-20:45:25.738 1184 Delete type=2 #235
+2021/12/30-20:45:25.738 1184 Delete type=2 #236
+2021/12/30-20:45:25.738 1184 Delete type=2 #239

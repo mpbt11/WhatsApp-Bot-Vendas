@@ -4,6 +4,7 @@ const { db } = require("../models/banco");
 const venda = (user, msg) => {
   if (msg === "*") {
     db[user].stage = 0;
+
     return ["O pedido foi cancelado 🥺"];
   }
 
@@ -12,6 +13,7 @@ const venda = (user, msg) => {
 
     let resumo = "*RESUMO DO PEDIDO* 📃\n\n";
     let total = 0;
+
     db[user].itens.forEach((value) => {
       resumo += `*${value.descricao}* ---> *R$ ${value.preco}* \n`;
 
@@ -19,15 +21,16 @@ const venda = (user, msg) => {
     });
 
     resumo += "\n👉";
-    resumo += ` *Total R$ ${(total.toFixed(2))}*`;
+    resumo += ` *Total R$ ${total.toFixed(2)}*`;
 
-    return ["Por favor, digite o endereço de entrega.\nPara *cancelar* digite *. ", resumo];
+    return [
+      "Por favor, digite o endereço de entrega.\n• Para *cancelar* digite *. ",
+      resumo,
+    ];
   }
 
   if (!cardapio[msg]) {
-    return [
-      "Ops... código inválido! Digite novamente."
-    ];
+    return ["Ops... código inválido! Digite novamente."];
   }
 
   db[user].itens.push(cardapio[msg]);
@@ -36,6 +39,5 @@ const venda = (user, msg) => {
     "Digite # para finalizar ou * para cancelar.",
     `**${cardapio[msg].descricao}** adicionado com sucesso!`,
   ];
-}
-
+};
 exports.execute = venda;

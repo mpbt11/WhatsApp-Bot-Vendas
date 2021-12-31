@@ -1,3 +1,6 @@
-2021/12/29-21:32:47.563 61c Reusing MANIFEST C:\MeusProjetos\Meuwhatsapp-bot\tokens\session\Default\Local Storage\leveldb/MANIFEST-000001
-2021/12/29-21:32:47.564 61c Recovering log #13
-2021/12/29-21:32:47.565 61c Reusing old log C:\MeusProjetos\Meuwhatsapp-bot\tokens\session\Default\Local Storage\leveldb/000013.log 
+2021/12/30-20:39:06.960 1a4 Reusing MANIFEST C:\MeusProjetos\Meuwhatsapp-bot\tokens\session\Default\Local Storage\leveldb/MANIFEST-000001
+2021/12/30-20:39:06.961 1a4 Recovering log #16
+2021/12/30-20:39:06.961 1a4 Reusing old log C:\MeusProjetos\Meuwhatsapp-bot\tokens\session\Default\Local Storage\leveldb/000016.log 
+2021/12/30-20:40:07.692 1e90 Level-0 table #21: started
+2021/12/30-20:40:07.695 1e90 Level-0 table #21: 23259 bytes OK
+2021/12/30-20:40:07.706 1e90 Delete type=0 #16

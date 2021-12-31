@@ -1,23 +1,23 @@
 var estagios = {
     0: {
         descricao: "Inicio",
-        imp: require("../etapas/inicio"),
+        app: require("../etapas/01-inicio"),
     },
     1: {
         descricao: "Vendas",
-        imp: require("../etapas/venda"),
+        app: require("../etapas/02-venda"),
     },
     2: {
         descricao: "Confirmacao da Venda",
-        imp: require("../etapas/confirmacao"),
+        app: require("../etapas/03-confirmacao"),
     },
     3: {
         descricao: "Forma de Pagamento",
-        imp: require("../etapas/pagamento"),
+        app: require("../etapas/04-pagamento"),
     },
     4: {
         descricao: "Encerramento",
-        imp: require("../etapas/encerramento"),
+        app: require("../etapas/05-encerramento"),
     },
 };
 
